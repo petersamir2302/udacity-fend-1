@@ -88,6 +88,7 @@ right: 10%;
     display: inline-block;
     margin: auto 5px;
     transition: all .3ms linear;
+    cursor: pointer;
 }
 
 .navbar__menu .menu__link {

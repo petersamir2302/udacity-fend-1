@@ -1,13 +1,20 @@
 # Landing Page Project
+By Peter Samir
+## About the project
+A main page with 4 sections, and a navbar the navbar highlights the section currently in focus
+and when clicked on a section in navbar it takes you through scrolling to the section
+and the navbar itself is populated dynamically through the sections added.
+## Lessons learned
+* Smooth scrolling
+* Template literals
+* document fragment
 
-## Table of Contents
+## Resources
+* Udacity.com
+* Stackoverflow.com
+* w3 Schools
 
-* [Instructions](#instructions)
-
-## Instructions
-
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
-
-To get started, open `js/app.js` and start building out the app's functionality
-
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+## Languages used
+* HTML5
+* CSS3
+* Javascript (ES6)

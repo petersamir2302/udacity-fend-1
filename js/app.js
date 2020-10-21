@@ -42,7 +42,10 @@ function buildNav(){
     for(const section of allSections){
         let navItem = document.createElement('li');
         let navLink = document.createElement('a');
-        navLink.href = `#${section.id}`;
+        navLink.addEventListener('click', function (e){
+            e.preventDefault();
+            scrollToSection(section);
+        });
         navLink.innerText = section.getAttribute('data-nav');
         navItem.appendChild(navLink);
         navLink.classList.add('menu__link');
@@ -77,7 +80,11 @@ function makeSectionActive(){
 
 
 // Scroll to anchor ID using scrollTO event
-//implemented that using css smooth scroll and href link html native that seemed better for performance and works fine
+function scrollToSection(element){
+    element.scrollIntoView({
+        behavior: 'smooth'
+    });
+}
 
 
 /**
@@ -92,7 +99,7 @@ window.onload = function (event) {
 // Set sections as active
     document.addEventListener('scroll', makeSectionActive);
 // Scroll to section on link click
-    //implemented that using css smooth scroll and href link html native that seemed better for performance and works fine
+    //added event Listeners when creating the items above
 }
 
 
